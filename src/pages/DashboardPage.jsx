@@ -42,10 +42,19 @@ function DashboardPage() {
   return (
     <>
       <AppNavbar />
+      <div 
+        style={{
+          background:"linear-gradient(to left, grey, black)",
+          minHeight: "100vh",
+          paddingTop: "2rem",
+          paddingBottom: "2rem",
+        }}
+        >
       <Container className="mt-4">
-        <h2 className="mb-4">Movie List</h2>
+        <h2 className="mb-4" style={{color:"white"}}>Movie List</h2>
         <MovieList movies={movies} onCardClick={handleMovieClick} />
       </Container>
+    </div>
     </>
   );
 }

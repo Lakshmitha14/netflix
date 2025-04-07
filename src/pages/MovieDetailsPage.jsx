@@ -38,10 +38,17 @@ function MovieDetailsPage() {
 
   return (
     <>
-      <AppNavbar />
+      <AppNavbar /> 
+      <div style={{
+          background:"linear-gradient(to left, grey, black)",
+          minHeight: "100vh",
+          paddingTop: "2rem",
+          paddingBottom: "2rem",
+        }}
+        >
 
       <Container className="mt-5">
-        <Card className="p-4 shadow bg-dark text-white">
+        <Card className="p-4 shadow bg-white text-black">
           <Row>
             <Col md={5} className="d-flex align-items-center justify-content-center mb-3 mb-md-0">
               <Card.Img
@@ -60,6 +67,7 @@ function MovieDetailsPage() {
                 }}
               />
             </Col>
+            
             <Col md={7}>
               <Card.Body>
                 <Card.Title as="h2">{movie.title}</Card.Title>
@@ -79,6 +87,7 @@ function MovieDetailsPage() {
           </Row>
         </Card>
       </Container>
+      </div>
     </>
   );
 }
